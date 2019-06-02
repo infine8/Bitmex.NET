@@ -31,7 +31,7 @@ namespace Bitmex.NET.Models
                 Symbol = symbol,
                 Side = Enum.GetName(typeof(OrderSide), side),
                 OrderQty = quantity,
-                DisplayQty = quantity,
+                //DisplayQty = quantity,
                 OrdType = Enum.GetName(typeof(OrderType), OrderType.Market),
                 Text = comment
             };
@@ -45,7 +45,7 @@ namespace Bitmex.NET.Models
                 Side = Enum.GetName(typeof(OrderSide), side),
                 OrderQty = quantity,
                 OrdType = Enum.GetName(typeof(OrderType), OrderType.Limit),
-                DisplayQty = quantity,
+                //DisplayQty = quantity,
                 Price = price,
                 ExecInst = cancelIfExecOnPlace ? "ParticipateDoNotInitiate" : string.Empty,
                 Text = comment
@@ -77,7 +77,7 @@ namespace Bitmex.NET.Models
                 Symbol = symbol,
                 Side = Enum.GetName(typeof(OrderSide), side),
                 OrderQty = quantity,
-                DisplayQty = quantity,
+                //DisplayQty = quantity,
                 OrdType = Enum.GetName(typeof(OrderType), OrderType.Stop),
                 StopPx = stopPrice,
                 ExecInst = (reduceOnly ?  "ReduceOnly," : "") + "LastPrice",
@@ -92,7 +92,7 @@ namespace Bitmex.NET.Models
                 Symbol = symbol,
                 Side = Enum.GetName(typeof(OrderSide), side),
                 OrderQty = quantity,
-                DisplayQty = quantity,
+                //DisplayQty = quantity,
                 OrdType = Enum.GetName(typeof(OrderType), OrderType.Stop),
                 StopPx = stopPrice,
                 Price = price,
